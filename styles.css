@@ -77,7 +77,9 @@ html {
 }
 
 .dashboard__header {
-	margin-bottom: 1rem;
+	margin: 0 auto 1rem;
+	width: 100%;
+	max-width: 1110px;
 	padding-bottom: 1.5rem;
 	border-bottom: 1px solid var(--header-border);
 	transition: border-bottom-color var(--default-transition);
@@ -94,18 +96,13 @@ html {
 	font-size: 1.1em;
 }
 
-.dashboard__summary {
-	display: grid;
-	gap: 1.75rem;
-	position: relative;
-	z-index: 0;
-	margin-bottom: 3.5rem;
-}
-
 .toggle {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1110px;
 }
 
 .toggle__name {
@@ -149,6 +146,16 @@ html {
 	transform: translateX(0);
 }
 
+.dashboard__summary {
+	display: grid;
+	gap: 1.75rem;
+	position: relative;
+	z-index: 0;
+	margin: 0 auto 3.5rem;
+	width: 100%;
+	max-width: 1110px;
+}
+
 .sm-summary {
 	position: relative;
 	padding: 1.75rem;
@@ -157,6 +164,7 @@ html {
 	background-color: var(--card-bg);
 	background-clip: padding-box;
 	text-align: center;
+	cursor: pointer;
 	transition: background-color var(--default-transition);
 }
 
@@ -258,6 +266,9 @@ html {
 }
 
 .overview {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1110px;
 }
 
 .overview__heading {
@@ -279,6 +290,7 @@ html {
 	padding: 1.75rem 2rem;
 	border-radius: 5px;
 	background-color: var(--card-bg);
+	cursor: pointer;
 	transition: background-color var(--default-transition);
 }
 
