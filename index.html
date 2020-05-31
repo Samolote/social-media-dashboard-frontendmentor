@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Social media dashboard with a theme switcher</title>
+</head>
+<body>
+  <main class="dashboard dashboard--dark">
+    <div class="dashboard__top">
+    <header class="dashboard__header">
+      <h1 class="dashboard__heading">Social Media Dashboard</h1>
+      <span class="dashboard__total">Total Followers: 23,004</span>
+    </header>
+    <div class="toggle">
+      <span class="toggle__name">Dark Mode</span>
+      <label class="toggle__label">
+        <input class="toggle__checkbox" type="checkbox" checked>
+        <span class="toggle__switch"></span>
+      </label>
+    </div>
+    </div>
+    <div class="dashboard__summary">
+      <div class="sm-summary sm-summary--facebook">
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" class="sm-icon">
+          <span class="sm-summary__profile">@nathanf</span>
+        </div>
+        <p class="sm-summary__current-value">1987</p>
+        <p class="sm-summary__fan-name">Followers</p>
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+          <span class="sm-summary__value-difference">12 Today</span>
+        </div>
+      </div>
+      <div class="sm-summary sm-summary--twitter">
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" class="sm-icon">
+          <span class="sm-summary__profile">@nathanf</span>
+        </div>
+        <p class="sm-summary__current-value">1044</p>
+        <p class="sm-summary__fan-name">Followers</p>
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+          <span class="sm-summary__value-difference">99 Today</span>
+        </div>
+      </div>
+      <div class="sm-summary sm-summary--instagram">
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" class="sm-icon">
+          <span class="sm-summary__profile">@realnathanf</span>
+        </div>
+        <p class="sm-summary__current-value">11k</p>
+        <p class="sm-summary__fan-name">Followers</p>
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+          <span class="sm-summary__value-difference">1099 Today</span>
+        </div>
+      </div>
+      <div class="sm-summary sm-summary--youtube">
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-youtube.svg" alt="Youtube Logo" class="sm-icon">
+          <span class="sm-summary__profile">Nathan F.</span>
+        </div>
+        <p class="sm-summary__current-value">8239</p>
+        <p class="sm-summary__fan-name">Subscribers</p>
+        <div class="sm-summary__wrapper">
+          <img src="./assets/images/icon-down.svg" alt="" class="caret caret--down">
+          <span class="sm-summary__value-difference">144 Today</span>
+        </div>
+      </div>
+    </div>
+    <section class="dashboard__overview overview">
+      <h2 class="overview__heading">Overview - Today</h2>
+      <div class="overview__stats stats">
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Page Views</h3>
+            <img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">87</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+              <span class="percentage__value">3%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Likes</h3>
+            <img src="./assets/images/icon-facebook.svg" alt="Facebook Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">52</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-down.svg" alt="" class="caret caret--down">
+              <span class="percentage__value">2%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Likes</h3>
+            <img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">5462</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+              <span class="percentage__value">2257%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Profile Views</h3>
+            <img src="./assets/images/icon-instagram.svg" alt="Instagram Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">52k</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+              <span class="percentage__value">1375%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Retweets</h3>
+            <img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">117</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+              <span class="percentage__value">303%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Likes</h3>
+            <img src="./assets/images/icon-twitter.svg" alt="Twitter Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">507</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-up.svg" alt="" class="caret caret--up">
+              <span class="percentage__value">553%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Likes</h3>
+            <img src="./assets/images/icon-youtube.svg" alt="Youtube Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">107</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-down.svg" alt="" class="caret caret--down">
+              <span class="percentage__value">19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="stat">
+          <div class="stat__wrapper">
+            <h3 class="stat__title">Total Views</h3>
+            <img src="./assets/images/icon-youtube.svg" alt="Youtube Logo" class="icon sm-icon">
+          </div>
+          <div class="stats__wrapper">
+            <span class="stat__count">1407</span>
+            <div class="percentage">
+              <img src="./assets/images/icon-down.svg" alt="" class="caret caret--down">
+              <span class="percentage__value">12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="attribution">
+      Challenge by <a	class="attribution__anchor"	href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="attribution__anchor" href="https://github.com/Samolote" target="_blank">Samolote</a>.
+    </p>
+  </footer>
+</body>
+</html>
