@@ -47,9 +47,7 @@ html {
 }
 
 .dashboard {
-	margin: 0 auto;
 	padding: 2.75rem 1.75rem;
-	max-width: 1440px;
 	background-color: var(--bg);
 	color: var(--primary-font-color);
 	transition: background-color var(--default-transition), color var(--default-transition);
@@ -147,13 +145,18 @@ html {
 }
 
 .dashboard__summary {
-	display: grid;
-	gap: 1.75rem;
 	position: relative;
 	z-index: 0;
 	margin: 0 auto 3.5rem;
 	width: 100%;
 	max-width: 1110px;
+}
+
+.dashboard__summary,
+.stats {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem 1.75rem;
 }
 
 .sm-summary {
@@ -262,9 +265,6 @@ html {
 	font-size: 0.9em;
 }
 
-.dashboard__overview {
-}
-
 .overview {
 	margin: 0 auto;
 	width: 100%;
@@ -276,14 +276,6 @@ html {
 	font-size: 1.7em;
 	color: var(--secondary-font-color);
 	transition: color var(--default-transition);
-}
-
-.overview__stats {
-}
-
-.stats {
-	display: grid;
-	gap: 1rem;
 }
 
 .stat {
@@ -340,4 +332,22 @@ html {
 
 .attribution__anchor {
 	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 580px) {
+	.dashboard__summary,
+	.stats {
+		grid-template-columns: repeat(2, minmax(255px, 1fr));
+	}
+}
+
+@media (min-width: 1000px) {
+	.dashboard {
+		padding: 2.75rem 1.75rem 5rem;
+	}
+
+	.dashboard__summary,
+	.stats {
+		grid-template-columns: repeat(4, minmax(min-content, 1fr));
+	}
 }
